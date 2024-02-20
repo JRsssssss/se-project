@@ -1,0 +1,41 @@
+.swiper {
+	margin-top: 4rem;
+	margin-bottom: 9rem;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: auto;
+	object-fit: fill;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+	display: none;
+	color: #212529;
+}
+
+span.swiper-pagination-bullet {
+	background-color: #212529;
+}
+
+@media (min-width: 768px) {
+
+	div.swiper-button-prev,
+	div.swiper-button-next {
+		display: block;
+	}
+
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide img {
+		width: 100%;
+		height: auto;
+		max-width: 35%;
+		object-fit: contain;
+	}
+}

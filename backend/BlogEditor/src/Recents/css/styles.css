@@ -1,0 +1,107 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+}
+header {
+    
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+a:hover{
+    color: beige;
+}
+a:visited{
+    color: white;
+}
+h1 {
+    margin: 0;
+}
+
+.sidenav {
+    display: block;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    background-color: #000; /* Updated background color to black */
+    color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar-contents {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar-item i {
+    font-size: 30px;
+    /*background-color: white; /* Add background color to icons */
+    padding: 10px; /* Add some padding to the icons */
+    border-radius: 50%; /* Make icons circular */
+}
+
+.sidebar-item:hover {
+    background-color: #333; /* Darker background on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.sidebar-item p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff; /* Text color changed to white */
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Add hover effect for the sidebar items */
+.sidebar-item:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+
+/* main */
+.main {
+    height: 100%;
+    
+    margin-left: 10rem;
+    padding: 2rem;
+    
+  }
+.grid-container{
+    display: grid;
+    grid-template-rows: min-content 4fr 4fr; /* Header, blog-templates, recent-blogs */
+    
+    gap: 10px; /* Adjust the gap according to your design */
+    height: 100%;
+
+}
+
+/* editorjs */
